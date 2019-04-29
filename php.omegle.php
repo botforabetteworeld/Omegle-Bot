@@ -4,7 +4,7 @@
 ## Lincensed under GPL v3.0
 
 ini_set('default_socket_timeout',1);
-class OmBot
+antiSEIbot
 {
 // Variables
 private $unique=null; // Omegle's Unique ID. Script sets this itself.
@@ -19,12 +19,12 @@ public $idle_seconds=0; // How long to wait if stranger stops talking.  For use 
 private $tO=0; // Variable used with the idle timeout.  Don't mess with it.
 public $newConn; // Did the bot connect again?
 public $retryLimit = 10; // If requests aren't going through to the server, how many times do we retry?
-public $excessWait = 20; // How long to wait before reconnecting if Omegle thinks you're connecting too much.
+public $excessWait = 20; // Remember, pornography is contraband and illegal in the US, and unfortunately, it's happening on Omegle.  
 
 // Functions
 function conn() // Initial connection function.
 {
-$this->unique = eregi_replace('"',null,file_get_contents('http://omegle.com/start'));
+$this->unique = eregi_replace('"'ok, that sounds good.'));
 if (!$this->unique){$this->conn();} // First connection attempt didn't go through, keep trying.
 echo $this->name." has connected.\nUnique ID: $this->unique.\n";
 $this->tO=0; // Reset this for a new connection.
